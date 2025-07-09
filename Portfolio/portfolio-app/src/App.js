@@ -85,12 +85,12 @@ const Portfolio = () => {
           'AWS EC2',
           'GitHub Actions'
         ],
-        github: 'https://github.com/yourusername/mogasu',
+        github: 'https://github.com/taejong12/mogatshoo',
         demo: 'https://your-mogasu-demo.netlify.app',
         category: 'web',
         readme: {
           title: '모갔슈? - 탈모인 익명 커뮤니티',
-          deploymentUrl: 'https://your-mogasu-demo.netlify.app',
+          deploymentUrl: 'https://mogatshoo.onrender.com/',
           summary: 'AI 탈모 진단과 익명 커뮤니티가 결합된 웹+앱 통합 서비스',
           summaryDetails: [
             'Python 딥러닝 모델로 사용자 탈모 사진 분석 후 단계별 상태 진단 제공',
@@ -125,12 +125,10 @@ const Portfolio = () => {
           'Google API',
           'Portone API'
         ],
-        github: 'https://github.com/yourusername/rural-village',
-        demo: 'https://your-rural-village-demo.netlify.app',
+        github: 'https://github.com/HanaSeoo/urban-village',
         category: 'web',
         readme: {
           title: '시골 마을 활성화 플랫폼',
-          deploymentUrl: 'https://your-rural-village-demo.netlify.app',
           summary: '빈집 활용과 노인 일자리 창출을 통한 지역 상생 플랫폼',
           summaryDetails: [
             'Spring MVC 기반 숙박 예약 시스템으로 지역 빈집을 관광 자원으로 활용',
@@ -143,8 +141,122 @@ const Portfolio = () => {
           background: '인구감소로 침체된 시골 지역의 자원인 빈집을 활용하여 지역을 되살리는 프로젝트입니다. 관광객에게는 특별한 숙박 경험을, 지역에는 일자리와 수익을, 마을에는 자치금을 제공하는 상생 모델을 웹 플랫폼으로 구현했습니다.'
         }
       },
+	  {
+	    id: 3,
+	    title: '발달장애인을 위한 GIS 기반 AI 매핑 서비스',
+	    date: '2024.12 (공모전 기획)',
+	    description: '발달장애인과 가족들이 접근 가능한 시설을 쉽게 찾을 수 있도록 돕는 AI 기반 맞춤형 추천 서비스',
+	    features: [
+	      'GIS 기반 공간분석으로 무장애 경로 계산 및 접근성 최적화',
+	      'AI 머신러닝을 통한 개인별 선호도 기반 시설 추천 알고리즘',
+	      '블록체인 기반 리뷰 신뢰성 검증 및 포인트 리워드 시스템',
+	      '음성 인식 및 시각적 보조 도구가 포함된 접근성 최적화 UI',
+	      'GPS 기반 실시간 위치 추적 및 응급상황 자동 신고 기능'
+	    ],
+	    tech: [
+	      'React Native',
+	      'Node.js',
+	      'MongoDB',
+	      'PostGIS',
+	      'TensorFlow.js',
+	      'Blockchain',
+	      'Leaflet.js',
+	      'OpenStreetMap'
+	    ],
+	    category: 'ai',
+	    readme: {
+	      title: '발달장애인을 위한 GIS 기반 AI 매핑 서비스',
+	      summary: '데이터 중심의 개인 맞춤형 위치기반 AI 매핑 서비스',
+	      summaryDetails: [
+	        'PostGIS 공간 데이터베이스로 시설 위치정보 저장 및 Leaflet.js로 지도 렌더링',
+	        'TensorFlow.js 클라이언트 사이드 AI 모델로 개인 행동 패턴 분석 및 시설 추천',
+	        'Ethereum 기반 스마트 컨트랙트로 리뷰 위변조 방지 및 포인트 자동 보상',
+	        'React Native 음성인식 + 텍스트 확대 + 색상 대비 조절로 접근성 UI 최적화',
+	        'GPS 위치 추적 (보호자 동의시) 및 응급상황 시 원터치 신고 기능'
+	      ],
+	      additionalInfo: '주요 기능: 맞춤형 추천, 무장애 경로, 커뮤니티, 안전 관리, 접근성 UI',
+	      background: '발달장애인 264만명 중 21.2%가 겪는 정보 접근성 부족 문제를 해결하고자 기획했습니다. 20-30개 카톡방에서 정보를 수집하는 비효율성을 AI와 GIS 기술로 해결하여, 자립적인 사회활동을 지원하는 포용적 기술 솔루션을 설계했습니다.'
+	    }
+	  },
+	  {
+	    id: 4,
+	    title: '딥페이크 성범죄 예방을 위한 NFT 기반 추적 시스템',
+	    date: '2024.11 (공모전 기획)',
+	    description: 'NFT 기반 생성자 신원 추적으로 딥페이크 범죄를 사전 예방하는 블록체인 시스템',
+	    features: [
+	      '딥페이크 생성 시 의무적 신원 인증 및 NFT 자동 발급 시스템',
+	      '블록체인 기반 생성자 정보 영구 기록 및 위변조 방지',
+	      '수사기관 요청 시에만 신원 공개하는 조건부 개인정보 보호',
+	      '심리적 억제 효과를 통한 범죄 예방 중심 접근법',
+	      '국제 협력 체계 구축을 위한 표준화된 추적 프로토콜'
+	    ],
+	    tech: [
+	      'Ethereum',
+	      'Smart Contract',
+	      'IPFS',
+	      'Web3.js',
+	      'MetaMask',
+	      'Solidity',
+	      'Node.js',
+	      'React'
+	    ],
+	    github: 'https://github.com/yourusername/nft-deepfake-prevention',
+	    demo: 'https://your-nft-deepfake-demo.netlify.app',
+	    category: 'blockchain',
+	    readme: {
+	      title: '딥페이크 성범죄 예방을 위한 NFT 기반 추적 시스템',
+	      deploymentUrl: 'https://your-nft-deepfake-demo.netlify.app',
+	      summary: '사전 예방 중심의 딥페이크 생성자 추적 및 범죄 억제 시스템',
+	      summaryDetails: [
+	        '딥페이크 소프트웨어 실행 시 실명 인증 완료 후에만 접근 허용',
+	        'Ethereum 스마트 컨트랙트로 생성자 정보, 생성시간, 콘텐츠 해시값 NFT 발급',
+	        'IPFS 분산 저장으로 데이터 보안 강화 및 평상시 암호화 보관',
+	        '수사기관 요청시에만 Web3.js를 통해 신원정보 조건부 공개',
+	        '가해자 80%가 10대인 점을 고려한 심리적 억제 효과 극대화 설계'
+	      ],
+	      additionalInfo: '주요 기능: 신원 인증, NFT 추적, 조건부 공개, 범죄 예방, 국제 협력',
+	      background: '딥페이크 성범죄가 3년간 2배 증가한 상황에서 기존 사후 대응의 한계를 인식하고 사전 예방 솔루션을 기획했습니다. 익명성에 의존하는 온라인 범죄 특성을 역이용하여 추적 가능성만으로도 범죄를 억제하는 새로운 접근법을 제시했습니다.'
+	    }
+	  },
+	  {
+	    id: 5,
+	    title: 'a-IGZO TFT 제작 및 전기적 특성 분석',
+	    date: '2023.11 - 2023.12 (팀 프로젝트)',
+	    description: 'RF 스퍼터링과 열증착을 활용한 a-IGZO 박막 트랜지스터 제작 및 채널 길이별 전기적 특성 분석',
+	    features: [
+	      'RF Magnetron Sputtering을 통한 a-IGZO 활성층 증착 (297Å)',
+	      'Thermal Evaporator를 활용한 Cr/Cu 전극 증착 및 리프트오프 공정',
+	      'TLM(Transmission Length Method)을 통한 Metal-Semiconductor 접촉 저항 분석',
+	      'Probe Station을 활용한 I-V 특성 측정 및 Ohmic Contact 확인',
+	      '채널 길이별(25-100μm) Transfer/Output Characteristics 분석 및 성능 평가'
+	    ],
+	    tech: [
+	      'RF Magnetron Sputtering',
+	      'Thermal Evaporation',
+	      'Photolithography',
+	      'BOE Wet Etching',
+	      'Probe Station',
+	      'Alpha-Step',
+	      'a-IGZO',
+	      'SiO2'
+	    ],
+	    category: 'semiconductor',
+	    readme: {
+	      title: 'a-IGZO TFT 제작 및 전기적 특성 분석',
+	      summary: 'Display Backplane용 Oxide TFT 제작 및 채널 길이 의존성 연구',
+	      summaryDetails: [
+	        'Tube Furnace 산화공정으로 530Å SiO2 게이트 절연막 형성 후 BOE 습식 식각',
+	        'RF 스퍼터링(140W, 60sccm Ar)으로 1:1:1 a-IGZO 활성층 297Å 증착',
+	        '열증착기를 통한 Cr/Cu 이중층 전극 1852Å 증착 및 4가지 채널 길이 패터닝',
+	        'TLM 분석으로 접촉저항 RC=1.018×10⁹Ω, 접촉비저항 ρC=7.10×10⁴Ω·cm² 도출',
+	        'Transfer 특성 분석으로 On/Off ratio 10⁴~10⁵, Subthreshold swing 484~710mV/dec 확인'
+	      ],
+	      additionalInfo: '주요 기능: 반도체 제조공정, 전기적 특성 분석, TFT 성능 평가, 채널 길이 최적화',
+	      background: '차세대 디스플레이 백플레인 기술인 Oxide TFT의 핵심 소재인 a-IGZO를 직접 제작하고 분석한 반도체공학실험입니다. 기존 a-Si TFT 대비 높은 이동도와 낮은 off current를 가진 a-IGZO TFT의 채널 길이에 따른 특성 변화를 체계적으로 연구했습니다.'
+	    }
+	  },
       {
-        id: 3,
+        id: 6,
         title: '수위 감지 기반 침수 차단 시스템',
         date: '2023.03 - 2023.06 (캡스톤디자인)',
         description: '수위센서와 자동 차단문을 활용한 지하주차장 침수 방지 시스템',
@@ -164,12 +276,10 @@ const Portfolio = () => {
           'CFRP',
           'C++'
         ],
-        github: 'https://github.com/yourusername/flood-barrier',
-        demo: 'https://your-flood-barrier-demo.netlify.app',
         category: 'iot',
         readme: {
           title: '수위 감지 기반 침수 차단 시스템',
-          deploymentUrl: 'https://your-flood-barrier-demo.netlify.app',
+          Url: 'https://hiddenpicture.tistory.com/37',
           summary: '실시간 수위 감지와 자동 차단문으로 지하주차장 침수 피해를 예방하는 시스템',
           summaryDetails: [
             '수위센서 A0핀으로 2초마다 침수 정도 측정 후 128×64 OLED에 실시간 표시',
@@ -182,8 +292,45 @@ const Portfolio = () => {
           background: '2022년 강남과 포항 침수 사고를 계기로 기획된 프로젝트입니다. 인명과 재산 피해를 예방하기 위한 실용적 솔루션으로, 기존 인프라 활용과 ESG 가치를 고려한 지속가능한 기술 개발에 중점을 두었습니다.'
         }
       },
+	  {
+	    id: 7,
+	    title: 'C++/C# 하이브리드 공학용 계산기',
+	    date: '2023.11 (개인 프로젝트)',
+	    description: 'C++의 고성능과 C#의 편리한 UI를 결합한 객체지향 설계 기반 공학용 계산기',
+	    features: [
+	      'C++/CLI 브릿지를 통한 하이브리드 아키텍처로 성능과 편의성 양립',
+	      '추상 클래스 Calculator<T>에서 상속받은 특화된 계산기 클래스 구조',
+	      '템플릿 프로그래밍으로 int, float, double 등 다양한 데이터 타입 지원',
+	      'Windows Forms 기반 직관적 UI 및 이벤트 기반 프로그래밍',
+	      '0으로 나누기, 오버플로우 등 예외 상황 처리 및 메모리 기능'
+	    ],
+	    tech: [
+	      'C++/CLI',
+	      'C#',
+	      '.NET Framework',
+	      'Windows Forms',
+	      'Visual Studio',
+	      'Template Programming',
+	      'OOP'
+	    ],
+	    category: 'desktop',
+	    readme: {
+	      title: 'C++/C# 하이브리드 공학용 계산기',
+	      deploymentUrl: 'https://your-hybrid-calculator-demo.netlify.app',
+	      summary: '객체지향 설계 원칙과 하이브리드 아키텍처를 실습한 공학용 계산기',
+	      summaryDetails: [
+	        'Calculator<T> 추상 클래스에서 TrigonometricCalculator, LogCalculator 등 상속 구조',
+	        'C++ 템플릿으로 타입별 특화 연산 및 컴파일 타임 타입 안전성 확보',
+	        'C++/CLI 브릿지로 네이티브 C++ 연산 엔진과 C# UI 레이어 연결',
+	        'Windows Forms 드래그앤드롭 디자인 및 이벤트 핸들러 기반 사용자 인터페이스',
+	        'marshal_context 활용한 String^↔std::string 안전한 타입 변환'
+	      ],
+	      additionalInfo: '주요 기능: 기본 연산, 삼각함수, 로그함수, 메모리 기능, 예외 처리',
+	      background: '객체지향프로그래밍 수업에서 배운 상속, 다형성, 템플릿 개념을 실제 구현해보고 싶어 시작했습니다. C++의 성능과 C#의 UI 개발 편의성을 결합하여 하이브리드 아키텍처의 장점을 체험하고, 실사용 가능한 계산기를 만드는 것이 목표였습니다.'
+	    }
+	  },
       {
-        id: 4,
+        id: 8,
         title: '대구로 데이터 연계 아이디어: 어서와 대구로는 처음이지',
         date: '2023.02 (해커톤 1일)',
         description: '공공데이터 활용을 통한 소상공인 지원 및 소비자 편의 개선 배달 플랫폼',
@@ -203,12 +350,10 @@ const Portfolio = () => {
           'Node.js',
           'MySQL'
         ],
-        github: 'https://github.com/yourusername/daeguro-platform',
-        demo: 'https://your-daeguro-demo.netlify.app',
         category: 'web',
         readme: {
           title: '대구로 데이터 연계 아이디어: 어서와 대구로는 처음이지',
-          deploymentUrl: 'https://your-daeguro-demo.netlify.app',
+          Url: 'https://hiddenpicture.tistory.com/36',
           summary: '공공데이터 융합을 통한 소상공인-소비자-관광객 상생 플랫폼',
           summaryDetails: [
             '농수산물 가격 공공데이터로 소상공인의 원재료 구매 비용 절감 지원',
@@ -222,7 +367,7 @@ const Portfolio = () => {
         }
       },
       {
-        id: 5,
+        id: 9,
         title: '시각장애인을 위한 스마트 지팡이',
         date: '2022.09 - 2022.12 (캡스톤디자인)',
         description: 'IoT 센서 기반 장애물 감지 및 GPS 응급신고 시스템을 갖춘 스마트 지팡이',
@@ -242,12 +387,10 @@ const Portfolio = () => {
           'Kotlin',
           'C++'
         ],
-        github: 'https://github.com/yourusername/smart-cane',
-        demo: 'https://your-smart-cane-demo.netlify.app',
         category: 'iot',
         readme: {
           title: '시각장애인을 위한 스마트 지팡이',
-          deploymentUrl: 'https://your-smart-cane-demo.netlify.app',
+          Url: 'https://hiddenpicture.tistory.com/35',
           summary: 'IoT 센서 통합과 모바일 앱 연동을 통한 시각장애인 보행 지원 시스템',
           summaryDetails: [
             '초음파센서로 1~100cm 범위 장애물 감지 후 거리별 차등 진동 피드백',
@@ -261,7 +404,7 @@ const Portfolio = () => {
         }
       },
       {
-        id: 6,
+        id: 10,
         title: '3링크 평면 로봇 제어 시스템',
         date: '2022.06 (MATLAB 프로젝트)',
         description: 'MATLAB/Simulink 기반 3링크 매니퓰레이터의 동역학 제어 시스템',
@@ -279,12 +422,10 @@ const Portfolio = () => {
           'Lagrangian Mechanics',
           'Forward/Inverse Kinematics'
         ],
-        github: 'https://github.com/yourusername/3link-robot',
-        demo: 'https://your-3link-robot-demo.netlify.app',
         category: 'simulation',
         readme: {
           title: '3링크 평면 로봇 제어 시스템',
-          deploymentUrl: 'https://your-3link-robot-demo.netlify.app',
+          Url: 'https://hiddenpicture.tistory.com/34',
           summary: 'MATLAB/Simulink를 활용한 3링크 매니퓰레이터의 완전한 제어 시스템',
           summaryDetails: [
             'Path Planning으로 X축/Y축 직선운동과 원운동 궤적을 시간 함수로 생성',
@@ -298,7 +439,7 @@ const Portfolio = () => {
         }
       },
       {
-        id: 7,
+        id: 11,
         title: '6축 로봇 매니퓰레이터 시뮬레이터',
         date: '2022.05 (MATLAB 프로젝트)',
         description: 'DH 파라미터 기반 6DOF 로봇 시뮬레이션 및 GUI 제어 시스템',
@@ -316,12 +457,10 @@ const Portfolio = () => {
           'DH Parameters',
           'Jacobian Matrix'
         ],
-        github: 'https://github.com/yourusername/6dof-robot',
-        demo: 'https://your-6dof-robot-demo.netlify.app',
         category: 'simulation',
         readme: {
           title: '6축 로봇 매니퓰레이터 시뮬레이터',
-          deploymentUrl: 'https://your-6dof-robot-demo.netlify.app',
+          Url: 'https://hiddenpicture.tistory.com/33',
           summary: 'DH 파라미터와 GUI를 활용한 6DOF 로봇의 완전한 시뮬레이션 시스템',
           summaryDetails: [
             'DH 파라미터 6개 관절 정의 후 SerialLink 객체로 로봇 모델 생성',
