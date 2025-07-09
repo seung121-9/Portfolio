@@ -503,7 +503,6 @@ const Portfolio = () => {
             <a href="#about" style={{textDecoration: 'none', color: '#666', fontWeight: '500'}}>About me</a>
             <a href="#skills" style={{textDecoration: 'none', color: '#666', fontWeight: '500'}}>Skills</a>
             <a href="#projects" style={{textDecoration: 'none', color: '#666', fontWeight: '500'}}>Projects</a>
-            <a href="#contact" style={{textDecoration: 'none', color: '#666', fontWeight: '500'}}>Contact</a>
           </div>
         </nav>
       </header>
@@ -1054,65 +1053,6 @@ const Portfolio = () => {
           </div>
         </div>
       )}
-
-      {/* Contact Section */}
-      <section id="contact" className="contact" style={{
-        padding: '5rem 0',
-        backgroundColor: 'white',
-        textAlign: 'center'
-      }}>
-        <div className="container" style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
-          padding: '0 2rem'
-        }}>
-          <h2 style={{
-            fontSize: '2.5rem',
-            marginBottom: '2rem',
-            color: '#1e293b'
-          }}>📞 CONTACT</h2>
-          <p style={{
-            fontSize: '1.2rem',
-            color: '#64748b',
-            marginBottom: '2rem'
-          }}>프로젝트 문의나 협업 제안이 있으시면 언제든 연락주세요!</p>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '2rem',
-            flexWrap: 'wrap'
-          }}>
-            <a href="mailto:seungpilchoe490@gmail.com" style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              padding: '1rem 2rem',
-              backgroundColor: '#3b82f6',
-              color: 'white',
-              textDecoration: 'none',
-              borderRadius: '8px',
-              fontWeight: '600',
-              transition: 'all 0.3s ease'
-            }}>
-              📧 이메일 보내기
-            </a>
-            <a href="tel:010-4991-6405" style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              padding: '1rem 2rem',
-              backgroundColor: '#10b981',
-              color: 'white',
-              textDecoration: 'none',
-              borderRadius: '8px',
-              fontWeight: '600',
-              transition: 'all 0.3s ease'
-            }}>
-              📱 전화하기
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer style={{
