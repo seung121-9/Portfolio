@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './App.css';
 
 const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,7 +59,6 @@ const Portfolio = () => {
       'ORM (JPA/Hibernate)'
     ]
   };
-
 
   const projects = [
       {
@@ -199,12 +197,9 @@ const Portfolio = () => {
 	      'Node.js',
 	      'React'
 	    ],
-	    github: 'https://github.com/yourusername/nft-deepfake-prevention',
-	    demo: 'https://your-nft-deepfake-demo.netlify.app',
 	    category: 'blockchain',
 	    readme: {
 	      title: '딥페이크 성범죄 예방을 위한 NFT 기반 추적 시스템',
-	      deploymentUrl: 'https://your-nft-deepfake-demo.netlify.app',
 	      summary: '사전 예방 중심의 딥페이크 생성자 추적 및 범죄 억제 시스템',
 	      summaryDetails: [
 	        '딥페이크 소프트웨어 실행 시 실명 인증 완료 후에만 접근 허용',
@@ -315,7 +310,6 @@ const Portfolio = () => {
 	    category: 'desktop',
 	    readme: {
 	      title: 'C++/C# 하이브리드 공학용 계산기',
-	      deploymentUrl: 'https://your-hybrid-calculator-demo.netlify.app',
 	      summary: '객체지향 설계 원칙과 하이브리드 아키텍처를 실습한 공학용 계산기',
 	      summaryDetails: [
 	        'Calculator<T> 추상 클래스에서 TrigonometricCalculator, LogCalculator 등 상속 구조',
@@ -485,61 +479,161 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio">
+    <div className="portfolio" style={{
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      margin: 0,
+      padding: 0,
+      lineHeight: '1.6',
+      color: '#333'
+    }}>
       {/* Header */}
-      <header className="header">
-        <nav className="nav">
-          <div className="nav-brand">SeungPil's Portfolio</div>
-          <div className="nav-links">
-            <a href="#about">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+      <header className="header" style={{
+        position: 'fixed',
+        top: 0,
+        width: '100%',
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        backdropFilter: 'blur(10px)',
+        zIndex: 1000,
+        borderBottom: '1px solid #eee'
+      }}>
+        <nav className="nav" style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '1rem 2rem'
+        }}>
+          <div className="nav-brand" style={{
+            fontSize: '1.5rem',
+            fontWeight: 'bold',
+            color: '#2563eb'
+          }}>SeungPil's Portfolio</div>
+          <div className="nav-links" style={{
+            display: 'flex',
+            gap: '2rem'
+          }}>
+            <a href="#about" style={{textDecoration: 'none', color: '#666', fontWeight: '500'}}>About me</a>
+            <a href="#skills" style={{textDecoration: 'none', color: '#666', fontWeight: '500'}}>Skills</a>
+            <a href="#projects" style={{textDecoration: 'none', color: '#666', fontWeight: '500'}}>Projects</a>
+            <a href="#contact" style={{textDecoration: 'none', color: '#666', fontWeight: '500'}}>Contact</a>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        color: 'white',
+        textAlign: 'center'
+      }}>
         <div className="hero-content">
-          <h1>안녕하세요.<br />창의적인 개발자이자 기획자인<br />최승필입니다.</h1>
-          {/* 변경된 부분: button을 a 태그로 변경하고 href 추가 */}
-          <a href="#about" className="cta-button">더 알아보기 →</a>
+          <h1 style={{
+            fontSize: '3.5rem',
+            marginBottom: '2rem',
+            fontWeight: '700',
+            lineHeight: '1.2'
+          }}>안녕하세요.<br />창의적인 개발자이자 기획자인<br />최승필입니다.</h1>
+          <a href="#about" className="cta-button" style={{
+            display: 'inline-block',
+            padding: '1rem 2rem',
+            backgroundColor: 'rgba(255, 255, 255, 0.2)',
+            color: 'white',
+            textDecoration: 'none',
+            borderRadius: '50px',
+            border: '2px solid rgba(255, 255, 255, 0.3)',
+            fontSize: '1.1rem',
+            fontWeight: '600',
+            transition: 'all 0.3s ease',
+            backdropFilter: 'blur(10px)'
+          }}>더 알아보기 →</a>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="about">
-        <div className="container">
-          <h2>📋 ABOUT ME</h2>
-          <div className="about-grid">
-            <div className="about-item">
-              <span className="icon">👤</span>
+      <section id="about" className="about" style={{
+        padding: '5rem 0',
+        backgroundColor: '#f8fafc'
+      }}>
+        <div className="container" style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 2rem'
+        }}>
+          <h2 style={{
+            fontSize: '2.5rem',
+            textAlign: 'center',
+            marginBottom: '3rem',
+            color: '#1e293b'
+          }}>📋 ABOUT ME</h2>
+          <div className="about-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '2rem'
+          }}>
+            <div className="about-item" style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1rem',
+              padding: '1.5rem',
+              backgroundColor: 'white',
+              borderRadius: '12px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+            }}>
+              <span className="icon" style={{fontSize: '2rem'}}>👤</span>
               <div>
-                <h3>이름</h3>
-                <p>최승필</p>
+                <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '600'}}>이름</h3>
+                <p style={{margin: 0, color: '#666'}}>최승필</p>
               </div>
             </div>
-            <div className="about-item">
-              <span className="icon">📧</span>
+            <div className="about-item" style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1rem',
+              padding: '1.5rem',
+              backgroundColor: 'white',
+              borderRadius: '12px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+            }}>
+              <span className="icon" style={{fontSize: '2rem'}}>📧</span>
               <div>
-                <h3>이메일</h3>
-                <p>seungpilchoe490</p>
-				<p>@gmail.com</p>
+                <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '600'}}>이메일</h3>
+                <p style={{margin: 0, color: '#666'}}>seungpilchoe490</p>
+				<p style={{margin: 0, color: '#666'}}>@gmail.com</p>
               </div>
             </div>
-            <div className="about-item">
-              <span className="icon">📱</span>
+            <div className="about-item" style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1rem',
+              padding: '1.5rem',
+              backgroundColor: 'white',
+              borderRadius: '12px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+            }}>
+              <span className="icon" style={{fontSize: '2rem'}}>📱</span>
               <div>
-                <h3>연락처</h3>
-                <p>010-4991-6405</p>
+                <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '600'}}>연락처</h3>
+                <p style={{margin: 0, color: '#666'}}>010-4991-6405</p>
               </div>
             </div>
-            <div className="about-item">
-              <span className="icon">🏠</span>
+            <div className="about-item" style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1rem',
+              padding: '1.5rem',
+              backgroundColor: 'white',
+              borderRadius: '12px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+            }}>
+              <span className="icon" style={{fontSize: '2rem'}}>🏠</span>
               <div>
-                <h3>주소</h3>
-                <p>경기도 삼송동</p>
+                <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '600'}}>주소</h3>
+                <p style={{margin: 0, color: '#666'}}>경기도 삼송동</p>
               </div>
             </div>
           </div>
@@ -547,47 +641,162 @@ const Portfolio = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="skills">
-        <div className="container">
-          <h2>🛠 SKILLS</h2>
-          <div className="skills-grid">
-            <div className="skill-category">
-              <h3>💬 Language</h3>
-              <div className="skill-tags">
+      <section id="skills" className="skills" style={{
+        padding: '5rem 0',
+        backgroundColor: 'white'
+      }}>
+        <div className="container" style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 2rem'
+        }}>
+          <h2 style={{
+            fontSize: '2.5rem',
+            textAlign: 'center',
+            marginBottom: '3rem',
+            color: '#1e293b'
+          }}>🛠 SKILLS</h2>
+          <div className="skills-grid" style={{
+            display: 'grid',
+            gap: '2rem'
+          }}>
+            <div className="skill-category" style={{
+              padding: '2rem',
+              backgroundColor: '#f8fafc',
+              borderRadius: '12px',
+              border: '1px solid #e2e8f0'
+            }}>
+              <h3 style={{
+                margin: '0 0 1rem 0',
+                fontSize: '1.3rem',
+                color: '#1e293b'
+              }}>💬 Language</h3>
+              <div className="skill-tags" style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem'
+              }}>
                 {skills.languages.map((skill, index) => (
-                  <span key={index} className="skill-tag language">{skill}</span>
+                  <span key={index} className="skill-tag language" style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: '#dbeafe',
+                    color: '#1e40af',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500'
+                  }}>{skill}</span>
                 ))}
               </div>
             </div>
-            <div className="skill-category">
-              <h3>🎨 Frontend</h3>
-              <div className="skill-tags">
+            <div className="skill-category" style={{
+              padding: '2rem',
+              backgroundColor: '#f8fafc',
+              borderRadius: '12px',
+              border: '1px solid #e2e8f0'
+            }}>
+              <h3 style={{
+                margin: '0 0 1rem 0',
+                fontSize: '1.3rem',
+                color: '#1e293b'
+              }}>🎨 Frontend</h3>
+              <div className="skill-tags" style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem'
+              }}>
                 {skills.frontend.map((skill, index) => (
-                  <span key={index} className="skill-tag frontend">{skill}</span>
+                  <span key={index} className="skill-tag frontend" style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: '#dcfce7',
+                    color: '#166534',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500'
+                  }}>{skill}</span>
                 ))}
               </div>
             </div>
-            <div className="skill-category">
-              <h3>⚙️ Backend</h3>
-              <div className="skill-tags">
+            <div className="skill-category" style={{
+              padding: '2rem',
+              backgroundColor: '#f8fafc',
+              borderRadius: '12px',
+              border: '1px solid #e2e8f0'
+            }}>
+              <h3 style={{
+                margin: '0 0 1rem 0',
+                fontSize: '1.3rem',
+                color: '#1e293b'
+              }}>⚙️ Backend</h3>
+              <div className="skill-tags" style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem'
+              }}>
                 {skills.backend.map((skill, index) => (
-                  <span key={index} className="skill-tag backend">{skill}</span>
+                  <span key={index} className="skill-tag backend" style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: '#fef3c7',
+                    color: '#92400e',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500'
+                  }}>{skill}</span>
                 ))}
               </div>
             </div>
-            <div className="skill-category">
-              <h3>💾 Database</h3>
-              <div className="skill-tags">
+            <div className="skill-category" style={{
+              padding: '2rem',
+              backgroundColor: '#f8fafc',
+              borderRadius: '12px',
+              border: '1px solid #e2e8f0'
+            }}>
+              <h3 style={{
+                margin: '0 0 1rem 0',
+                fontSize: '1.3rem',
+                color: '#1e293b'
+              }}>💾 Database</h3>
+              <div className="skill-tags" style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem'
+              }}>
                 {skills.database.map((skill, index) => (
-                  <span key={index} className="skill-tag database">{skill}</span>
+                  <span key={index} className="skill-tag database" style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: '#fce7f3',
+                    color: '#be185d',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500'
+                  }}>{skill}</span>
                 ))}
               </div>
             </div>
-            <div className="skill-category">
-              <h3>🔧 DevOps</h3>
-              <div className="skill-tags">
+            <div className="skill-category" style={{
+              padding: '2rem',
+              backgroundColor: '#f8fafc',
+              borderRadius: '12px',
+              border: '1px solid #e2e8f0'
+            }}>
+              <h3 style={{
+                margin: '0 0 1rem 0',
+                fontSize: '1.3rem',
+                color: '#1e293b'
+              }}>🔧 DevOps</h3>
+              <div className="skill-tags" style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem'
+              }}>
                 {skills.tools.map((skill, index) => (
-                  <span key={index} className="skill-tag tools">{skill}</span>
+                  <span key={index} className="skill-tag tools" style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: '#f3e8ff',
+                    color: '#7c3aed',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500'
+                  }}>{skill}</span>
                 ))}
               </div>
             </div>
@@ -596,29 +805,109 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="projects">
-        <div className="container">
-          <h2>🚀 PROJECTS</h2>
-          <p className="projects-subtitle">주요 프로젝트만 보기 ✅</p>
+      <section id="projects" className="projects" style={{
+        padding: '5rem 0',
+        backgroundColor: '#f8fafc'
+      }}>
+        <div className="container" style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 2rem'
+        }}>
+          <h2 style={{
+            fontSize: '2.5rem',
+            textAlign: 'center',
+            marginBottom: '1rem',
+            color: '#1e293b'
+          }}>🚀 PROJECTS</h2>
+          <p className="projects-subtitle" style={{
+            textAlign: 'center',
+            marginBottom: '3rem',
+            color: '#64748b',
+            fontSize: '1.1rem'
+          }}>주요 프로젝트만 보기 ✅</p>
           
-          <div className="projects-grid">
+          <div className="projects-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+            gap: '2rem'
+          }}>
             {projects.map((project) => (
-              <div key={project.id} className="project-card">
-                <div className="project-header">
-                  <span className={`project-badge ${project.category}`}>
+              <div key={project.id} className="project-card" style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '2rem',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+                border: '1px solid #e2e8f0',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+              }}>
+                <div className="project-header" style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '1rem'
+                }}>
+                  <span className={`project-badge ${project.category}`} style={{
+                    padding: '0.3rem 0.8rem',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem',
+                    fontWeight: '600',
+                    backgroundColor: '#dbeafe',
+                    color: '#1e40af'
+                  }}>
                     {project.category}
                   </span>
                 </div>
-                <div className="project-date">{project.date}</div>
-                <h3 className="project-title">{project.description}</h3>
-                <ul className="project-features">
+                <div className="project-date" style={{
+                  color: '#64748b',
+                  fontSize: '0.9rem',
+                  marginBottom: '0.5rem'
+                }}>{project.date}</div>
+                <h3 className="project-title" style={{
+                  margin: '0 0 1rem 0',
+                  fontSize: '1.3rem',
+                  fontWeight: '600',
+                  color: '#1e293b',
+                  lineHeight: '1.4'
+                }}>{project.description}</h3>
+                <ul className="project-features" style={{
+                  listStyle: 'none',
+                  padding: 0,
+                  margin: '0 0 1.5rem 0'
+                }}>
                   {project.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
+                    <li key={index} style={{
+                      margin: '0.5rem 0',
+                      paddingLeft: '1rem',
+                      position: 'relative',
+                      fontSize: '0.9rem',
+                      color: '#475569',
+                      lineHeight: '1.6'
+                    }}>
+                      <span style={{
+                        position: 'absolute',
+                        left: 0,
+                        color: '#3b82f6'
+                      }}>•</span>
+                      {feature}
+                    </li>
                   ))}
                 </ul>
-                <div className="project-tech">
+                <div className="project-tech" style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem',
+                  marginBottom: '1.5rem'
+                }}>
                   {project.tech.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
+                    <span key={index} className="tech-tag" style={{
+                      padding: '0.3rem 0.6rem',
+                      backgroundColor: '#f1f5f9',
+                      color: '#475569',
+                      borderRadius: '8px',
+                      fontSize: '0.8rem',
+                      fontWeight: '500'
+                    }}>{tech}</span>
                   ))}
                 </div>
                 <div className="project-links">
@@ -626,6 +915,17 @@ const Portfolio = () => {
                     <button 
                       className="readme-btn"
                       onClick={() => openModal(project)}
+                      style={{
+                        padding: '0.75rem 1.5rem',
+                        backgroundColor: '#3b82f6',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '8px',
+                        fontSize: '0.9rem',
+                        fontWeight: '600',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease'
+                      }}
                     >
                       📋 README
                     </button>
@@ -639,41 +939,206 @@ const Portfolio = () => {
 
       {/* Modal */}
       {isModalOpen && modalContent && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-header">
-              <h2>README.md</h2>
-              <button className="modal-close" onClick={closeModal}>✕</button>
+        <div className="modal-overlay" onClick={closeModal} style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 2000,
+          padding: '2rem'
+        }}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{
+            backgroundColor: 'white',
+            borderRadius: '16px',
+            maxWidth: '800px',
+            width: '100%',
+            maxHeight: '90vh',
+            overflow: 'hidden',
+            boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)'
+          }}>
+            <div className="modal-header" style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              padding: '2rem 2rem 1rem 2rem',
+              borderBottom: '1px solid #e2e8f0'
+            }}>
+              <h2 style={{
+                margin: 0,
+                fontSize: '1.5rem',
+                fontWeight: '600',
+                color: '#1e293b'
+              }}>README.md</h2>
+              <button className="modal-close" onClick={closeModal} style={{
+                background: 'none',
+                border: 'none',
+                fontSize: '1.5rem',
+                cursor: 'pointer',
+                padding: '0.5rem',
+                borderRadius: '8px',
+                color: '#64748b'
+              }}>✕</button>
             </div>
-            <div className="modal-body">
-              <h1>{modalContent.title}</h1>
+            <div className="modal-body" style={{
+              padding: '2rem',
+              overflowY: 'auto',
+              maxHeight: 'calc(90vh - 100px)'
+            }}>
+              <h1 style={{
+                margin: '0 0 2rem 0',
+                fontSize: '2rem',
+                fontWeight: '700',
+                color: '#1e293b'
+              }}>{modalContent.title}</h1>
               
-              <div className="modal-section">
-                <h3>🔗 URL</h3>
-                <a href={modalContent.deploymentUrl} target="_blank" rel="noopener noreferrer">
-                  {modalContent.deploymentUrl}
-                </a>
-              </div>
+              {modalContent.deploymentUrl && (
+                <div className="modal-section" style={{marginBottom: '2rem'}}>
+                  <h3 style={{
+                    margin: '0 0 1rem 0',
+                    fontSize: '1.3rem',
+                    fontWeight: '600',
+                    color: '#1e293b'
+                  }}>🔗 URL</h3>
+                  <a href={modalContent.deploymentUrl} target="_blank" rel="noopener noreferrer" style={{
+                    color: '#3b82f6',
+                    textDecoration: 'none',
+                    fontWeight: '500'
+                  }}>
+                    {modalContent.deploymentUrl}
+                  </a>
+                </div>
+              )}
 
-              <div className="modal-section">
-                <h3>📌 Summary</h3>
-                <p>{modalContent.summary}</p>
-                <ul>
+              <div className="modal-section" style={{marginBottom: '2rem'}}>
+                <h3 style={{
+                  margin: '0 0 1rem 0',
+                  fontSize: '1.3rem',
+                  fontWeight: '600',
+                  color: '#1e293b'
+                }}>📌 Summary</h3>
+                <p style={{
+                  margin: '0 0 1rem 0',
+                  fontSize: '1.1rem',
+                  color: '#475569',
+                  lineHeight: '1.6'
+                }}>{modalContent.summary}</p>
+                <ul style={{
+                  margin: '0 0 1rem 0',
+                  paddingLeft: '1.5rem'
+                }}>
                   {modalContent.summaryDetails.map((detail, index) => (
-                    <li key={index}>{detail}</li>
+                    <li key={index} style={{
+                      margin: '0.5rem 0',
+                      color: '#475569',
+                      lineHeight: '1.6'
+                    }}>{detail}</li>
                   ))}
                 </ul>
-                <blockquote>{modalContent.additionalInfo}</blockquote>
+                <blockquote style={{
+                  margin: '1rem 0',
+                  padding: '1rem',
+                  backgroundColor: '#f8fafc',
+                  borderLeft: '4px solid #3b82f6',
+                  borderRadius: '4px',
+                  fontStyle: 'italic',
+                  color: '#64748b'
+                }}>{modalContent.additionalInfo}</blockquote>
               </div>
 
-              <div className="modal-section">
-                <h3>🤔 Background</h3>
-                <p>{modalContent.background}</p>
+              <div className="modal-section" style={{marginBottom: '2rem'}}>
+                <h3 style={{
+                  margin: '0 0 1rem 0',
+                  fontSize: '1.3rem',
+                  fontWeight: '600',
+                  color: '#1e293b'
+                }}>🤔 Background</h3>
+                <p style={{
+                  margin: 0,
+                  color: '#475569',
+                  lineHeight: '1.6'
+                }}>{modalContent.background}</p>
               </div>
             </div>
           </div>
         </div>
       )}
+
+      {/* Contact Section */}
+      <section id="contact" className="contact" style={{
+        padding: '5rem 0',
+        backgroundColor: 'white',
+        textAlign: 'center'
+      }}>
+        <div className="container" style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 2rem'
+        }}>
+          <h2 style={{
+            fontSize: '2.5rem',
+            marginBottom: '2rem',
+            color: '#1e293b'
+          }}>📞 CONTACT</h2>
+          <p style={{
+            fontSize: '1.2rem',
+            color: '#64748b',
+            marginBottom: '2rem'
+          }}>프로젝트 문의나 협업 제안이 있으시면 언제든 연락주세요!</p>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2rem',
+            flexWrap: 'wrap'
+          }}>
+            <a href="mailto:seungpilchoe490@gmail.com" style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '1rem 2rem',
+              backgroundColor: '#3b82f6',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '8px',
+              fontWeight: '600',
+              transition: 'all 0.3s ease'
+            }}>
+              📧 이메일 보내기
+            </a>
+            <a href="tel:010-4991-6405" style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '1rem 2rem',
+              backgroundColor: '#10b981',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '8px',
+              fontWeight: '600',
+              transition: 'all 0.3s ease'
+            }}>
+              📱 전화하기
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer style={{
+        backgroundColor: '#1e293b',
+        color: 'white',
+        textAlign: 'center',
+        padding: '2rem 0'
+      }}>
+        <p style={{
+          margin: 0,
+          color: '#94a3b8'
+        }}>© 2025 최승필. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
