@@ -225,14 +225,7 @@ const Portfolio = () => {
 	      '채널 길이별(25-100μm) Transfer/Output Characteristics 분석 및 성능 평가'
 	    ],
 	    tech: [
-	      'RF Magnetron Sputtering',
-	      'Thermal Evaporation',
-	      'Photolithography',
-	      'BOE Wet Etching',
-	      'Probe Station',
-	      'Alpha-Step',
-	      'a-IGZO',
-	      'SiO2'
+
 	    ],
 	    category: 'semiconductor',
 	    readme: {
@@ -268,7 +261,6 @@ const Portfolio = () => {
           'OLED Display',
           '수중펌프',
           'CFRP',
-          'C++'
         ],
         category: 'iot',
         readme: {
@@ -338,10 +330,6 @@ const Portfolio = () => {
           '농수산물 가격 API',
           '문화관광 공공데이터',
           '국토관리 데이터',
-          'Kakao Map API',
-          'React',
-          'Node.js',
-          'MySQL'
         ],
         category: 'web',
         readme: {
@@ -378,7 +366,6 @@ const Portfolio = () => {
           'HC-06 Bluetooth',
           'GPS Module',
           'Kotlin',
-          'C++'
         ],
         category: 'iot',
         readme: {
