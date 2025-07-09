@@ -86,7 +86,6 @@ const Portfolio = () => {
           'GitHub Actions'
         ],
         github: 'https://github.com/taejong12/mogatshoo',
-        demo: 'https://your-mogasu-demo.netlify.app',
         category: 'web',
         readme: {
           title: '모갔슈? - 탈모인 익명 커뮤니티',
@@ -279,7 +278,7 @@ const Portfolio = () => {
         category: 'iot',
         readme: {
           title: '수위 감지 기반 침수 차단 시스템',
-          Url: 'https://hiddenpicture.tistory.com/37',
+          deploymentUrl: 'https://hiddenpicture.tistory.com/37',
           summary: '실시간 수위 감지와 자동 차단문으로 지하주차장 침수 피해를 예방하는 시스템',
           summaryDetails: [
             '수위센서 A0핀으로 2초마다 침수 정도 측정 후 128×64 OLED에 실시간 표시',
@@ -353,7 +352,7 @@ const Portfolio = () => {
         category: 'web',
         readme: {
           title: '대구로 데이터 연계 아이디어: 어서와 대구로는 처음이지',
-          Url: 'https://hiddenpicture.tistory.com/36',
+          deploymentUrl: 'https://hiddenpicture.tistory.com/36',
           summary: '공공데이터 융합을 통한 소상공인-소비자-관광객 상생 플랫폼',
           summaryDetails: [
             '농수산물 가격 공공데이터로 소상공인의 원재료 구매 비용 절감 지원',
@@ -390,7 +389,7 @@ const Portfolio = () => {
         category: 'iot',
         readme: {
           title: '시각장애인을 위한 스마트 지팡이',
-          Url: 'https://hiddenpicture.tistory.com/35',
+          deploymentUrl: 'https://hiddenpicture.tistory.com/35',
           summary: 'IoT 센서 통합과 모바일 앱 연동을 통한 시각장애인 보행 지원 시스템',
           summaryDetails: [
             '초음파센서로 1~100cm 범위 장애물 감지 후 거리별 차등 진동 피드백',
@@ -425,7 +424,7 @@ const Portfolio = () => {
         category: 'simulation',
         readme: {
           title: '3링크 평면 로봇 제어 시스템',
-          Url: 'https://hiddenpicture.tistory.com/34',
+          deploymentUrl: 'https://hiddenpicture.tistory.com/34',
           summary: 'MATLAB/Simulink를 활용한 3링크 매니퓰레이터의 완전한 제어 시스템',
           summaryDetails: [
             'Path Planning으로 X축/Y축 직선운동과 원운동 궤적을 시간 함수로 생성',
@@ -460,7 +459,7 @@ const Portfolio = () => {
         category: 'simulation',
         readme: {
           title: '6축 로봇 매니퓰레이터 시뮬레이터',
-          Url: 'https://hiddenpicture.tistory.com/33',
+          deploymentUrl: 'https://hiddenpicture.tistory.com/33',
           summary: 'DH 파라미터와 GUI를 활용한 6DOF 로봇의 완전한 시뮬레이션 시스템',
           summaryDetails: [
             'DH 파라미터 6개 관절 정의 후 SerialLink 객체로 로봇 모델 생성',
@@ -650,7 +649,7 @@ const Portfolio = () => {
               <h1>{modalContent.title}</h1>
               
               <div className="modal-section">
-                <h3>🔗 Deployment URL</h3>
+                <h3>🔗 URL</h3>
                 <a href={modalContent.deploymentUrl} target="_blank" rel="noopener noreferrer">
                   {modalContent.deploymentUrl}
                 </a>
